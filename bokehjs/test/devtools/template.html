@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
+    <script>
+      const font = "bold 14px Roboto"
+      document.fonts.load(font).then((font_face) => {
+        console.log("XXXXXX", font_face)
+      })
+    </script>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" as="style" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" crossorigin>
     <style>
       html, body {
         box-sizing: border-box;
@@ -20,7 +28,7 @@
       }
 
       .bk-root {
-        font-family: Helvetica;
+        font-family: Roboto;
         font-size: 13px;
       }
     </style>
