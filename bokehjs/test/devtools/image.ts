@@ -78,7 +78,7 @@ export function diff_image(existing: Buffer, current: Buffer, verbose: boolean =
         const d = (a: number, b: number) => Math.abs(a - b)
 
 
-        if (!(h0 == h1 && s0 == s1 && /*l0 == l1*/ d(l0, l1) <= 5 && _a0 == _a1)) {
+        if (!(h0 == h1 && s0 == s1 && /*l0 == l1*/ d(l0, l1) <= 12 && _a0 == _a1)) {
           if (verbose) {
             const [x, y] = [i % width, Math.floor(i / width)]
             console.log("")
