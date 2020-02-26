@@ -142,7 +142,7 @@ export class Title extends TextAnnotation {
 
     this.define<Title.Props>({
       text:             [ p.String                     ],
-      text_font:        [ p.Font,          'helvetica' ],
+      text_font:        [ p.Font,          'Roboto'    ],
       text_font_size:   [ p.FontSizeSpec,  '13px'      ],
       text_font_style:  [ p.FontStyle,     'bold'      ],
       text_color:       [ p.ColorSpec,     '#444444'   ],
