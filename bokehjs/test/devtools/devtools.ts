@@ -134,7 +134,7 @@ function diff_image(existing: Buffer, current: Buffer): ImageDiff | null {
         // console.log(`current(${x}, ${y})  = RGBA(${r1}, ${g1}, ${b1}, ${a1}) HSLA(${h1}, ${s1}, ${l1}, ${_a1})`)
         // console.log(`d(h0, h1) = ${d(h0, h1)} d(s0, s1) = ${d(s0, s1)} d(l0, l1) = ${d(l0, l1)}`)
 
-        if (!(h0 == h1 && s0 == s1 && l0 == l1 /*d(l0, l1) <= 5*/ && _a0 == _a1)) {
+        if (!(h0 == h1 && s0 == s1 && /*l0 == l1*/ d(l0, l1) <= 5 && _a0 == _a1)) {
           pixels++
           c32[i] = encode(0, 0, 255)
         }
